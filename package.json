@@ -1,6 +1,6 @@
 {
   "name": "satoshi-random",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Bitcoin random number functions implemented for NodeJS and browsers via SJCL",
   "main": "lib/index.js",
   "browser": "lib-browser/index.js",
