@@ -5,6 +5,14 @@
   "main": "lib/index.js",
   "browser": "lib-browser/index.js",
   "author": "Dan Howitt <dan@coinative.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/coinative/satoshi-random.git"
+  },
+  "bugs": {
+    "url": "https://github.com/coinative/satoshi-random/issues"
+  },
+  "homepage": "https://github.com/coinative/satoshi-random",
   "license": "MIT",
   "scripts": {
     "test": "./node_modules/.bin/mocha -r ./test/support/env -R dot ./test && ./node_modules/.bin/karma start",
