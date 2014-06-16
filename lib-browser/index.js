@@ -1,11 +1,7 @@
 var sjcl = require('satoshi-sjcl');
 var toBytes = sjcl.codec.bytes.fromBits;
 
-function wrap(fn) {
-  return function (size) {
-    size = size / 4;
-    return new Buffer(toBytes(fn.call(sjcl.random, size)));
-  }
+exports.randomBytes = function (size) {
+  var words = sjcl.random.randomWords(Math.ceil(size / 4));
+  return new Buffer(toBytes(words).slice(0, size));
 };
-
-exports.randomBytes = wrap(sjcl.random.randomWords);
